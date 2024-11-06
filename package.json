@@ -1,0 +1,37 @@
+{
+  "name": "njin-whatsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "start:client": "node ./dist/client.js",
+    "dev": "nodemon ./register.js ./src/server.ts",
+    "dev:client": "nodemon ./register.js ./src/client.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@vinejs/vine": "^2.1.0",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "dotenv": "^16.4.5",
+    "p-throttle": "^6.2.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "pm2": "^5.4.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "sonic-boom": "^4.2.0"
+  }
+}
